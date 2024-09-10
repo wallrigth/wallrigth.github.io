@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido de Casamento</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://media.discordapp.net/attachments/778505571787341846/1282565809490886748/20240827_153006.jpg?ex=66e1cc3d&is=66e07abd&hm=0fd064a4c281a33f13058079cd11cbb804bac60ceb7bdb9e9dff76c18ce64fdc&=&format=webp&width=537&height=427'); /* Caminho para a imagem de fundo */
+            background-size: cover; /* Faz com que a imagem cubra toda a área visível */
+            background-position: center; /* Centraliza a imagem */
+            background-repeat: no-repeat; /* Não repete a imagem */
+            color: #333;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #e91e63;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        textarea {
+            height: 150px;
+            resize: vertical;
+        }
+        button {
+            background-color: #e91e63;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #d81b60;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Pedido de Casamento</h1>
+        <p>Querida [KEYLA] </p>
+        <p>Como dito ontem, prometi a você que iria lhe pedir em casamento virtualmente, e aqui estar. caso seja do seu interesse aceitar o acordo sinta-se livre para assinalar. com muito carinho ( pedro).</p>
+        
+        <h2>Contrato de Aceitação</h2>
+        <p>Por favor, leia o contrato a seguir e confirme sua aceitação.</p>
+
+        <form action="https://app.zapsign.com.br/verificar/9850a4d8-4a79-48ee-b345-ae2e2d7fff72" method="POST">
+            <div class="form-group">
+                <label for="name">Nome Completo:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Mensagem (opcional):</label>
+                <textarea id="message" name="message"></textarea>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="accept" name="accept" required>
+                <label for="accept">Eu aceito o contrato e estou pronto(a) para o grande dia!</label>
+            </div>
+            <button type="submit">Enviar Confirmação</button>
+        </form>
+
+        <p>caso seja oque você quer, entre no link <a href="https://app.zapsign.com.br/verificar/9850a4d8-4a79-48ee-b345-ae2e2d7fff72" target="_blank">site oficial</a>.</p>
+    </div>
+</body>
